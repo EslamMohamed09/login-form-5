@@ -1,0 +1,324 @@
+* {margin:0;padding:0;
+    text-transform:capitalize;
+    text-decoration:none !important;
+    outline:none !important;
+    transition: all .3s linear;
+    font-family:'Exo 2',sans-serif;
+    list-style:none;
+    scroll-behavior:smooth;}
+
+.container {margin:0 auto;}
+
+:root{--red:#ff4f5b;
+      --primary-color:#bd06bd;
+      --primary-color1:#f010f0;
+      --primary-color2:#e783e7;
+      --primary-color3:#f87a93;
+      --gray:#8d8d8d;
+      --gray-dark:#343a40;
+      --light:#f8f9fa;
+      --dark:#343a40;
+
+      --font-mont:'Mont', cursive;
+      --font-Rale: 'Rale', cursive;
+
+      --box-shadow:0 0 .5rem #090a0a7a;
+      --box-shadow2:0 .5rem 1.5rem #0d2e2e23;
+      --box-shadow3:0 .3rem 4rem #252c2c2f;
+      --box-shadow4:0 0 4px #000; 
+      --box-shadow5:0 0 3px #fff;}
+
+*::selection {background:#fff;}
+
+::-webkit-scrollbar {width:5px;}
+
+::-webkit-scrollbar-thumb {background-image:linear-gradient(125deg, #fb3c7f 0%, #ffc05e 100%);
+                           border-radius:10px;}
+
+html {scroll-behavior:smooth;
+      font-size:80%;}
+
+body {overflow-x:hidden;}
+
+section {padding:3rem 2%;}
+
+.heading {padding-top:4rem;
+          border-bottom:.1rem solid #f87a93;
+          margin:auto;
+          margin-bottom:5rem;}
+
+.heading span {font-size:1.5rem;
+               padding:1rem 3rem;
+               color:#fff;
+               background-color:#f87a93;
+               border-top-right-radius:2rem;
+               display:inline-block;}
+
+.btn {background:#f87a93;
+      color:#fff;
+      padding:0.5rem 1.5rem;
+      margin:2rem 0;
+      font-size:1.3rem;
+      border-radius:5rem;
+      transition:0.5s linear;}
+
+.btn:hover {background:#ff4f5b;
+            color:rgb(180, 172, 226);}
+
+/********************
+ # Header
+********************/
+header {z-index:100000;
+        position:fixed;
+        top:0;right:0;
+        left:0;
+        padding:0;}
+
+header .top-header {background-color:rgb(231, 19, 19);
+                    margin:0;
+                    padding:0.7rem 3%;
+                    justify-content:center;
+                    align-items:center;}
+
+header .top-header .icons ul {display:flex;
+                              margin:auto;}
+
+header .top-header .icons ul li a {color:rgba(116, 2, 78, 0.8);
+                                   background-color:rgb(250, 179, 48);
+                                   display:block;
+                                   width:34px;
+                                   height:34px;
+                                   text-align:center;
+                                   border-radius:50%;
+                                   line-height:35px;
+                                   margin:3px;
+                                   font-size:1.3rem;}
+
+header .top-header .icons ul li a:hover {background:rgba(116, 2, 78, 0.8);; 
+                                         color:#fff}
+
+
+header .main-header {background:#faadbd;
+                     display:flex;
+                     flex-wrap:wrap;
+                     justify-content:space-between;
+                     align-items:center;
+                     padding:0.7rem 3%;
+                     margin:0;}
+
+header .main-header .logo img {width:9rem;
+                               margin:auto;}
+
+header .main-header .navbar {padding:0;
+                             margin:0;}
+
+header .main-header .navbar ul {display:flex;
+                                padding:0;
+                                margin:auto 0;}
+
+header .main-header .navbar ul li {padding:0.5rem 1.3rem;
+                                   margin:0 0.5rem;
+                                   border-radius:3rem;}
+
+header .main-header .navbar ul li a {font-size:1.3rem;
+                                     color:#fff;
+                                     transition:0.7s ease;}
+
+header .main-header .navbar ul li.active,
+header .main-header .navbar ul li:hover {background:rgba(116, 2, 78, 0.8);}
+
+header .main-header .navbar ul li:hover a {color:#fff;}
+
+header .main-header .bag {margin:auto 0;}
+
+header .main-header .fa-shopping-bag {font-size:2rem;
+                                      color:#fff;}
+
+header .main-header .bag:hover .fa-shopping-bag {color:rgba(116, 2, 78, 0.8);}
+
+
+header .main-header.header-active {background:rgba(207, 10, 141, 0.8);
+                                   box-shadow:0 0 10px #333;}
+
+
+
+
+
+/********************
+ # Footer
+********************/
+.main-footer {background:#333;}
+
+.main-footer .footer-container {padding:4rem 0;}
+
+.footer-box .logo {margin-top:-1.5rem;}
+
+.main-footer h3,
+.main-footer p,
+.main-footer ul li a {color:#fff;}
+
+.main-footer p {font-size:1.2rem;
+                margin-top:1.5rem;}
+
+.main-footer ul {margin-top:1.5rem;}
+
+.main-footer ul li {margin-bottom:0.5rem;}
+
+.main-footer ul li a {font-size:1.2rem;}
+
+.footer-box .social-media #footi {background:var(--primary-color);
+                                  color:#fff;
+                                  width:3rem;
+                                  height:3rem;
+                                  font-size:2rem;
+                                  margin:0.6rem 0.3rem;
+                                  margin-top:1.2rem;
+                                  padding:.5rem;
+                                  border-radius:50%;
+                                  cursor:pointer;}
+
+.footer-box #footi:hover {transform:rotate(360deg);}
+
+.footer-bottom {background-color:#222;
+                text-align:center;
+                padding:0.9rem;
+                margin-bottom:0;}
+
+.footer-bottom h4 {color:#999;}
+
+.footer-bottom h4 span {color:#fff;}
+
+
+
+
+
+
+
+
+/*==========================================
+ # Account Page
+===========================================*/
+.account-section {background:radial-gradient(#fff,#ffd6d6);
+                  margin-top:5rem;
+                  padding:5rem 0;}
+
+.account-section .row .col-left {display:flex;}
+
+.account-section .col-left .image {width:50%;
+                                   text-align:center;
+                                   align-items:center;
+                                   margin:auto;
+                                   justify-content:center;}
+
+.account-section .col-left .image img {width:100%;
+                                       text-align:center;
+                                       align-items:center;
+                                       margin:auto;
+                                       justify-content:center;}
+
+.account-section .col-right .form-container {background:#fff;
+                                             width:25rem;
+                                             height:25rem;
+                                             position:relative;
+                                             text-align:center;
+                                             padding:2rem 1rem 1rem;
+                                             margin:auto;
+                                             overflow:hidden;
+                                             box-shadow:0 0 20px 0px rgba(0,0,0,0.3);}
+
+.account-section .col-right .form-container .form-title {display:inline-block;
+                                                         justify-content:space-between;
+                                                         width:95%;
+                                                         margin:auto;
+                                                         margin-bottom:1rem;}
+
+.account-section .col-right .form-container .form-title h3 {font-weight:bold;
+                                                            display:inline-block;
+                                                            padding:0 30px;
+                                                            cursor:pointer;}
+
+.account-section .col-right .form-container .form-title #Indicator {border:none;
+                                                                    background-color:#d1641b;
+                                                                    width:100px;
+                                                                    height:3px;
+                                                                    margin-top:8px;
+                                                                    opacity:1;
+                                                                    transform:translateX(150px);
+                                                                    transition:transform 1s;}
+
+.account-section .col-right .form-container form {margin-bottom:1.5rem;
+                                                  position:absolute;
+                                                  top:130px;
+                                                  max-width:300px;
+                                                  transition:transform 1s;}
+
+.account-section .col-right .form-container #LoginForm {left:-23rem;}
+
+.account-section .col-right .form-container #RegForm {left:1.3rem;}
+
+.account-section .col-right .form-container form input {outline:none;
+                                                        padding:0.2rem 0.6rem;
+                                                        width:90%;
+                                                        color:#444;
+                                                        font-size:1rem;
+                                                        margin-bottom:0.5rem;
+                                                        border:1.2px solid #333;}
+
+.account-section .col-right .form-container form input:focus {box-shadow:inset 13px 3px 28px -1px rgba(0, 0, 0, 0.3);}
+
+.account-section .col-right .form-container form .input-password {border-bottom:2px solid #d1641b;}
+
+.account-section .col-right .form-container .account-btn {padding:0.4rem 1.2rem;
+                                                          margin-top:0.6rem;
+                                                          margin-bottom:1rem;
+                                                          outline:none;
+                                                          border:none;
+                                                          font-size:1.2rem;
+                                                          color:#ffd6d6;
+                                                          background:#d1641b;
+                                                          width:95%;
+                                                          border-radius:5rem;
+                                                          transition:all 0.6s linear;}
+
+.account-section .form-container .account-btn:hover {color:#fff;}
+
+@media (max-width:768px){
+
+      .account-section .col-left {margin-bottom:2rem;}
+
+      .account-section .col-right .form-container {width:60%;}
+
+      .account-section .col-right .form-container {width:25rem;
+                                                   height:28rem;}
+
+      .account-section .col-right .form-container #LoginForm {left:-32rem;}
+
+      .account-section .col-right .form-container #RegForm {left:0.7rem;}
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+
+      html {font-size:60%;}
+
+      .pagination p {margin:auto 2px;}
+
+}
+
+
+@media (max-width:768px) {
+
+        header .top-header {display:none;}
+
+        section {padding:5rem 4%;}
+
+        
+               
+}
